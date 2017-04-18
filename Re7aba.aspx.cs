@@ -26,13 +26,13 @@ public partial class Re7aba : System.Web.UI.Page
 
        // setup Smtp authentication
        System.Net.NetworkCredential credentials =
-           new System.Net.NetworkCredential("re7abaegypt@gmail.com", "re7abasa3d");
+           new System.Net.NetworkCredential("########", "#############");
        client.UseDefaultCredentials = false;
        client.Credentials = credentials;
 
        MailMessage msg = new MailMessage();
-       msg.From = new MailAddress("re7abaegypt@gmail.com");
-       msg.To.Add(new MailAddress("re7abaegypt@gmail.com"));
+       msg.From = new MailAddress("#########");
+       msg.To.Add(new MailAddress("##########"));
 
        msg.Subject = "رسالة من موقع رحابة";
        msg.IsBodyHtml = true;
